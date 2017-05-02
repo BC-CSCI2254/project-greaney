@@ -1,0 +1,332 @@
+<html>
+
+<head>
+<title>
+Home
+</title>
+<link rel = "stylesheet" type = "text/css" href = "home.css" />
+
+
+</head>
+
+    <body>
+
+        <img src="assets/gasson-background.jpg" class="header-image">
+        <div class="header">
+            <h1>
+            Home
+            </h1>
+
+            <p class="home-intro">
+                Welcome to the Course Scheduler page.
+            </p>
+        </div>
+
+        
+        
+        <div class="home-container">
+            <!--
+        <hr />
+            <div id="menu">
+                <ul>
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="share.html">Share</a>
+                    </li>
+                </ul>
+            </div>
+            <hr />
+            -->
+
+
+
+
+            <div class="panel">
+
+                <div class="left-panel">
+
+                    <div class="input-list style-add">
+                        <h3>
+                            Add to calendar
+                        </h3>
+                        <form id="form" onSubmit="return checkForm()">
+                        <input id="classname" type="text" placeholder="enter calendar event" class="calendar-event-input">
+
+                        <div>
+                            
+                            <table  class="days-checkbox" > 
+                                <tr id="days">
+                                    <td>
+                                        <input type="checkbox" class="squaredThree" id="M" value="M">
+                                            <label for="M"> M</label>
+                                        <br>
+                                        
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="T" value="T">
+                                            <label for="T"> T</label>
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="W" value="W">
+                                            <label for="W"> W</label>
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="TH" value="TH">
+                                            <label for="Th"> Th</label>
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="F" value="F">
+                                            <label for="F"> F</label>
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="S" value="S"><label for="S"> S</label>
+                                        <br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="Su" value="Su"><label for="Su"> Su</label>
+                                        <br>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="time-input">
+                                <tr>
+                                    <td>
+                                        Start:
+                                        <input type="time" value="09:00" step="300" id="start-time">
+                                    </td>
+                                        <td>                 End:
+                                        <input type="time" value="09:50" step="300" id="end-time">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                        <input class="button" id='submit' type="submit" value="Submit" onclick="add();return false">
+                    </form>
+                    </div>
+                </div>
+                
+                <div class="middle-panel">
+                    <div class="event-list">
+                        <h3>
+                            Calendar List
+                        </h3>
+                        <ul id="calendar-list" class="calendar-list">
+
+
+                        </ul>
+
+
+                    </div>
+                </div>
+            
+
+            
+                <div class="right-panel">
+                    <h3 style="margin-bottom: 30px;">
+                            Share With Other Users 
+                        </h3>
+                    
+                    <div style="display:block; width: 300px;">
+                        
+                        <form action="">
+                          <input class="forum-input" id="m" autocomplete="off" placeholder="Type a message..."/><button class="button">Send</button>
+                        </form>
+                        <ul id="messages"></ul>
+                    </div>
+
+
+
+                </div>
+                
+            </div>
+            
+            
+            <div class="">
+
+                <h2>
+                    Calendar
+                </h2>
+
+                <div class="calendar-container">
+
+                    <div class="times-key">
+                        <table class="calendar-times-key">
+                                <tr  class="calendar-times-key-first">
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        8am
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        9am
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        10am
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        11am
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        12pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        1pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        3pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        4pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        5pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        6pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        7pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        8pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        9pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        10pm
+                                    </td>
+                                </tr>
+
+                            </table>
+                    </div>
+
+                    <div class="day day-M" id="Monday">
+                        <div class="day-label">
+                        M
+                        </div>
+
+                    </div>
+
+                    <div class="day day-T" id="Tuesday">
+                        <div class="day-label">
+                        T
+                        </div>
+                    </div>
+
+                    <div class="day day-W" id="Wednesday">
+                        <div class="day-label">
+                        W
+                        </div>
+                        
+                    </div>
+
+                    <div class="day day-Th" id="Thursday">
+                        <div class="day-label">
+                        Th
+                        </div>
+                    </div>
+
+                    <div class="day day-F" id="Friday">
+                        <div class="day-label">
+                        F
+                        </div>
+                    </div>
+
+                    <div class="day day-S" id="Saturday">
+                        <div class="day-label">
+                        S
+                        </div>
+                    </div>
+                    <div class="day day-Su" id="Sunday">
+                        <div class="day-label">
+                        Su
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+        <script type="text/javascript" src="home%20(1).js"></script>
+
+
+            </div>
+
+
+
+        </div>
+    <!--load the socket.io-client, which exposes a io global, and then connect.-->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      user = "";
+      $(function () {
+        var socket = io();
+
+        $('form').submit(function(){
+          var msgVal = $('#m').val();
+          console.log(msgVal);
+          
+          socket.emit('chat message', {message:$('#m').val(), user: user});
+          $('#m').val('');
+          return false;
+        });
+
+        socket.on('userSet', function(data){
+          user = data.username;
+        })
+        socket.on('connectToRoom',function(data){
+          console.log("data -> " + data);
+      });
+        socket.on('chat message', function(msg){
+          $('#messages').append($('<li>').text(msg));
+        });
+      });
+    </script>
+    </body>
+</html>

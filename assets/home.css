@@ -1,0 +1,345 @@
+html, body {
+
+margin:0;
+padding:0;
+    font-family: sans-serif;
+}
+
+
+.header-image{
+
+    width: 101%;
+    margin-left: -1%;
+    margin-right: 0%;
+}
+
+.header{
+    
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: cursive;
+    font-size: 150%;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    background-color: ghostwhite;
+}
+
+
+.days-checkbox{
+
+    display:flex;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    
+
+}
+
+
+.days-checkbox td{
+
+    padding: 2px 4px 2px 4px;
+     border: solid lightblue 1px ;
+    background-color: whitesmoke;
+}
+
+.time-input{
+    
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    
+
+}
+.time-input td{
+
+    padding: 4px 10px 4px 20px;
+    font-family: sans-serif;
+  font-size: 15px;
+    
+}
+
+input[type="time"]
+{
+    font-size:14px;
+    font-family: sans-serif;
+    border: solid lightblue 1px ;
+    padding: 3px 0px 3px 7px;
+}
+
+.calendar-event-input{
+
+    min-width:300px;
+    width:60%;
+    border: solid lightblue 1px ;
+    background-color: whitesmoke;
+}
+
+.calendar-list{
+
+    padding: 10px 10px 10px 10px;
+}
+
+.calendar-list li{
+
+    padding: 10px 10px 10px 10px;
+}
+
+.calendar-list li button{
+
+    margin: 5px 1px 1px 0px;
+}
+
+.calendar-table{
+
+    width: 100%;
+    min-width: 900px;
+    text-align: center;
+    display: flex;
+    align-content: flex-start;
+
+
+
+}
+
+.calendar-table .day{
+
+    min-width: 120px;
+    border: solid black 1px;
+    height: 500px;
+    align-items: flex-start;
+    vertical-align: text-top;
+
+}
+
+
+.event{
+    display: inline-block;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0px 0px 0px 0px;
+    overflow: auto;
+
+
+}
+
+.event1{
+    background-color: rgb(102,204,255);
+    /*height: 37px;*/
+
+}
+
+.event2{
+    background-color: rgb(255,153,153);
+    /*height: 37px;*/
+
+}
+
+.event3{
+    background-color: rgb(255,255,153);
+    /*height: 56px;*/
+
+}
+
+.event4{
+  background-color: rgb(153,255,153);
+}
+
+.calendar-event-desc{
+
+    display: inline-block;
+    width:80%;
+    padding-left:4px;
+
+}
+
+.spacer{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   /* border: 1px solid black;*/
+    margin-bottom: 1px;
+
+}
+
+.spacer1{
+
+    /*height: 26px;*/
+
+}
+
+.spacer2{
+
+    height: 41px;
+
+}
+
+.spacer3{
+
+    height: 123px;
+
+}
+
+
+.calendar-container{
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    min-width: 800px;
+    height: 650px;
+    text-align: center;
+}
+
+
+.calendar-container .calendar-times-key td{
+
+    padding: 0px 5px 20px 5px;
+    text-align: right;
+    height: 39px;
+    border-bottom: 1px solid black;
+
+}
+
+.calendar-container .calendar-times-key-first td{
+
+    padding: 0px 5px 20px 5px;
+    text-align: right;
+    height: 28px;
+
+}
+
+.calendar-container .day{
+
+    display: flex;
+    border: 1px solid black;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    min-width: 140px;
+}
+
+.calendar-container .day .day-label{
+
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    color: white;
+    height: 25px;
+    align-items: center;
+}
+
+.remove-icon-container{
+
+    float:right;
+    display: flex;
+    vertical-align: middle;
+    margin-right: 2px;
+    padding-top:5%;
+
+}
+
+.remove-icon{
+
+  /*  display: flex;*/
+    width: 16px;
+    height: 16px;
+}
+
+input.remove-icon{
+
+    background-image: url(/assets/remove-icon-16.png); /* 16px x 16px */
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+   /* height: 26px;           /* make this the size of your image */
+   /* padding-left: 26px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+    padding: 2px 5px 14px 0px;
+    height: 20px;
+    display: inline-block;
+}
+
+input.remove-icon:hover{
+    background-image: url(/assets/remove-icon-16-hover.png); /* 16px x 16px */
+
+}
+
+
+
+
+
+
+
+.select-class{
+
+    margin-bottom: 40px;
+}
+
+.share-input{
+
+
+}
+
+.shared-with{
+
+
+}
+
+.shared-with ul{
+
+    padding: 0px 0px 20px 35px;
+}
+
+.shared-with li{
+
+    padding: 5px 5px 5px 5px;
+}
+
+.panel{
+
+    background-color: #F4DEC9;
+    padding: 30px;
+    display: flex;
+}
+
+.left-panel{
+    
+    display: flex;
+}
+
+.right-panel{
+    display: flex;
+    
+}
+
+
+input[type="text"] {
+  display: flex;
+  margin: 10px 0 10px 0;
+  width: 40%;
+  min-width: 200px;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+    padding: 5px;
+}
+input[type="text"]:focus {
+  outline: none;
+  background-color: floralwhite;
+    color: black;
+}
+
+.button{
+    
+    padding: 3px 6px 3px 6px;
+    
+}
